@@ -1,0 +1,34 @@
+1.Configuracion desde cero:
+    Instalar: Google, Node, Git
+    Ver versiones de node,git y npm 
+    VsCode:
+
+        Prettier:Codigo estetico
+            settings > default formatter > Prettier - code formatter
+                       formatOnSave > check
+                       Prettier:SingleQoute > check
+
+        Corchetes JSON:
+           ctr + shift + p
+           json > Preferences: Open Settings
+           Add setting: Corchetes coloreados
+                "editor.bracketPairColorization.enabled": true
+
+        EsLint: Mostrar errores
+
+        JavaScript (ES6) code snippets
+        ES7 React/Redux/GraphQL/React-Native snippets
+
+    Iniciando:
+        npx create-react-app frontend
+        cd frontend
+        npm start
+        Abrir en el navegador
+        Ir a src/App.js y hacer un template básico del header y la lista de productos,agregar estilos en index.css
+    
+    Git:
+        Eliminar el repositorio dentro de frontend: rm -rf .git
+        Mover el archivo .gitignore de frontend a la carpeta principal(EcommerceMern)
+        En .gitignore quitar el / en node_modules y build
+
+        Inicializar un nuevo repositorio en ecommercemern: git init
