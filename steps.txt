@@ -57,3 +57,25 @@
                 Cuando se le de click a la img de cada producto (Link to) se enviará a '/product/:slug'
 
             '/product/:slug' -> screens/ProductScreen (detalle del producto)
+
+4. Create Node Server
+
+    EcommerceMern/backend:
+
+        1. Correr npm init in backend folder 
+        2. Update package.json set type: module
+        3. npm install express
+        4. Archivo server.js -> crear server:
+            En la ruta get '/api/products' la response serán los productos (para esto necestimoas mover el archivo 
+            frontend/src/data.js a la carpeta backend)
+        
+        5.Probar ruta get '/api/products':
+            node server.js
+            Abrir en el navegador la ruta http://localhost:5000/api/products y ver si se muestran los productos
+            Instalar JSONViewer para que los JSON se vean bien
+        
+        6.Instalar nodemon para no tener que escribir node server.js cada vez que se hacen cambios
+            npm install nodemon --save-dev
+            Comando start en package.json: 
+                "start": "nodemon server.js"
+            npm start
