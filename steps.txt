@@ -32,3 +32,17 @@
         En .gitignore quitar el / en node_modules y build
 
         Inicializar un nuevo repositorio en ecommercemern: git init
+
+2.Lista de Productos: 
+    - En la carpeta padre hacer un README.md
+
+    - src/data.js
+        Clonar repositorio del profesor https://github.com/basir/mern-amazona.git
+        2.1 Crear array de productos en src/data.js
+        2.2 Añadir images de los productos:
+            Carpeta de imagenes public/images (copiarlas del repositorio del profesor)
+        2.3 Renderizar productos:
+            En src/App.js importar los productos de src/data.js:
+            Mostrar imagen,nombre,precio y boton para añadir al carrito
+            
+        2.4 Estilos en index.js
