@@ -46,3 +46,14 @@
             Mostrar imagen,nombre,precio y boton para añadir al carrito
             
         2.4 Estilos en index.js
+
+3.Routing
+
+    3.1 npm i react-router-dom en frontend
+    3.2 src/App.js
+        Envolver todo en un BrowserRouter,rutas:
+        
+            '/' -> screens/HomeScreen (renderizar todos los productos):
+                Cuando se le de click a la img de cada producto (Link to) se enviará a '/product/:slug'
+
+            '/product/:slug' -> screens/ProductScreen (detalle del producto)
