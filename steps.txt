@@ -91,3 +91,16 @@
 
 6.Manejar estado con useReducer
     Usar useReducer en HomeScrren.js para manejaar el estado de una manera más compleja
+
+7.Agregar Boostrap
+
+    frontend/
+    npm install react-bootsrap bootstrap --force
+    npm install -S react-router-bootstrap --force
+
+    Modificar frontend/src/: 
+            App.js -> Modificar navBar y hacer footer
+            index.css, 
+            index.js
+
+
