@@ -103,4 +103,13 @@
             index.css, 
             index.js
 
+8.Componente Product
 
+    Ahora el HomeScreen accedera al component Product.js
+    frontend/src/components/Product.js:
+        Mostrar los productos como cards de bootsrap
+        Cada producto tendra un rating (frontend/src/components/Rating.js:)
+
+    
+    Agregar fontawsome en frontend/public/index.html
+    Estilos para el rating frontend/src/index.css
