@@ -79,3 +79,12 @@
             Comando start en package.json: 
                 "start": "nodemon server.js"
             npm start
+
+5. Fetch Products From Backend:
+
+    - frontend/
+        1.Añadir proxy en package.json
+        2.npm install axios
+        3.Consultar a la API en src/screens/HomeScreen.js:
+            useState -> inicialmente la lista de productos será una lista vacia
+            Despues de consultar a la API mediante el useEffect la lista de productos sera la response
