@@ -88,3 +88,6 @@
         3.Consultar a la API en src/screens/HomeScreen.js:
             useState -> inicialmente la lista de productos será una lista vacia
             Despues de consultar a la API mediante el useEffect la lista de productos sera la response
+
+6.Manejar estado con useReducer
+    Usar useReducer en HomeScrren.js para manejaar el estado de una manera más compleja
