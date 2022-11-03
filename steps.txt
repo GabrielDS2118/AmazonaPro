@@ -136,3 +136,7 @@
 
         frontend/src/screens/HomeScreen.js
             Poner dentro de un Helmet el title Amazona
+
+10.Create Loading and Message Component
+    Capturar por ejemplo el mensaje de que no existe producto y mostrarlo en rojo
+
