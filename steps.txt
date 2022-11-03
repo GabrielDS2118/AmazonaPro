@@ -113,3 +113,26 @@
     
     Agregar fontawsome en frontend/public/index.html
     Estilos para el rating frontend/src/index.css
+
+9.Detalle de Producto
+
+    backend/server.js -> Ruta para acceder a un producto en especifico
+
+    src/screens/ProductScreen.js:
+        Acceder a un producto en especifico
+        crear 3 columnas: image, info and action (mostrar si el producto esta disponible o no)
+        Estilo .img-large en  frontend/src/index.css
+
+    Nombre del tab -> Helmet
+
+        frontend/
+        npm install react-helmet-async
+        
+        frontend/src/index.js
+            Envolver toda la aplicacion en Helmet
+        
+        frontend/src/screens/ProductScreen.js:
+            Envolver el nombre del producto en un Helmet
+
+        frontend/src/screens/HomeScreen.js
+            Poner dentro de un Helmet el title Amazona
