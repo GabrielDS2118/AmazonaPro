@@ -144,3 +144,18 @@
     2. define reducer (frontend/src/Store.js)
     3. create store provider : Envolver la aplicacion en un StoreProvider (frontend/src/index.js)
     4. implement add to cart button click handler (frontend/src/screens/ProductScreen.js)
+
+12.Completar add to cart 
+
+    Verificar si existe el producto en el carrito:
+        backend/data: Agregar un campo _id a cada producto
+        backend/server.js: Nuevo endpoint que busca un producto segun el _id
+        frontend/src/Store.js: Si el new item ya esta en el carro solo se actualiza la cantidad de lo controrio se agrega
+
+    Ver si hay suficientes unidades 
+        frontend/src/screens/ProductScreen.js
+            Si no hay suficientes unidades se mostrará una alarma que dice ('Sorry. Product is out of stock')
+
+    Mostrar cantidad de productos:
+        frontend/src/App.js
+        usar reduce para sumar la cantidad de todos los productos
