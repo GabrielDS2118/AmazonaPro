@@ -140,3 +140,7 @@
 10.Create Loading and Message Component
     Capturar por ejemplo el mensaje de que no existe producto y mostrarlo en rojo
 
+11. Create React Context (Sumar productos en el carrito)
+    2. define reducer (frontend/src/Store.js)
+    3. create store provider : Envolver la aplicacion en un StoreProvider (frontend/src/index.js)
+    4. implement add to cart button click handler (frontend/src/screens/ProductScreen.js)
