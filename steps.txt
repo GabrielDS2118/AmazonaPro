@@ -229,3 +229,19 @@
                 
                 server.js
                     Conectarse a MongoDB leyendo la variable de entorno 
+
+16.Crear productos ejemplos en la base de datos (backend/)
+
+    models/productModel.js -> Crear Schema y Modelo
+        timestaps: true -> Mostrar campos de creado y actulizado at
+
+    routes/
+
+        - seedRoutes.js: '/' (Insertara todos los productos que estan en data.js)
+            En data.js eliminar los _id, mongo los asignará
+            Verificar creacion de productos en la base de datos: 
+                Database > BrowserCollections > Collections > amazonagreat.products
+
+        - En server.js usaremos los routings (modularidad)
+
+        - productRoutes.js
