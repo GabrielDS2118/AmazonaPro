@@ -159,3 +159,26 @@
     Mostrar cantidad de productos:
         frontend/src/App.js
         usar reduce para sumar la cantidad de todos los productos
+
+13.Vista del carrito
+
+    CartScreen: 
+        Mostrar imágen del producto, botones de agregar y restar:
+            El boton de sumar 1 estará desabilitado si la cantidad de items es igual a las unidades disponibles
+            El boton de restar 1 estará desabilitada si la cantidad de items es igual a 1
+
+    Ruta a la vista del carrito:
+        Crearla en App.js
+        Usar navigate en ProductScreen para redirecionar al dar click al boton Add to Cart
+    
+    Eliminar del carrito
+        Crear  case 'CART_REMOVE_ITEM' en Store.js
+        Trash en CartScreen.js
+    
+    Almacenamiento con localStorage para que al recargar el navegador no se pierda la informacion
+
+    Redirigir al checkout cuando se de click en Proceed to Checkout:
+        En CartSecreen.js se debe dirigir primero por medio del navigate al sig in
+    
+    Implementar Add to Cart en HomeScreen:
+        Si no hay unidades disponibles se mostrará el boton de que no esta disponible
