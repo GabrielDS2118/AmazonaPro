@@ -186,3 +186,46 @@
 14 Crear vista SigIn
     screens/SiginScreen.js
     Crear routing en src/App.js
+
+15.Conectarse a la base de datos MongoDB
+
+    Atlas
+        Entrar https://www.mongodb.com/atlas y loguearse
+        Entrar a https://cloud.mongodb.com/v2#/org/633ae5328b18fc68bca8737d/projects y crear un nuevo proyecto
+
+        Build a Database:
+            Shared(Free)
+            Create a Shared Cluster (dejar todo por defecto)
+            Usuario:
+                name -> gabecomerce
+                password -> mtzgblv1922
+            
+            
+            Where would you like to connect from?
+                IPAdreess -> 0.0.0.0/0  (everywhere)
+                Description -> Love
+                Add Entry
+            
+            Finish and close
+
+            Go to Database
+
+            BrowserCollections > Add My Own Data
+                Create Database 
+                    Db name -> amazonapro
+                    Collection name -> pruebas-cl
+                    Additional Preferences -> everything unchecked
+
+        Conectarse
+
+                - DEPLOYMENT > Database > Connect > Connect your aplication
+                    Copiar connection string
+                - backend/.env -> En una variable gurdar el connection string
+                    Asegurarse de ignorar el archivo .env en .gitignore
+                
+                - Instalaciones (backend/):
+                    npm install mongoose
+                    npm install dotenv
+                
+                server.js
+                    Conectarse a MongoDB leyendo la variable de entorno 
