@@ -245,3 +245,13 @@
         - En server.js usaremos los routings (modularidad)
 
         - productRoutes.js
+
+17.Crear Users ejemplos en la base de datos
+
+    backend/
+        Instalar bcryptjs -> npm i bcryptjs
+        Agregar users en data.js
+        Crear schema (models/userModel.js)
+        En routes/seddRoutes.js insertar los usuarios
+    
+    Abrir en el navegador http://localhost:5000/api/seed para que se creen los usuarios
