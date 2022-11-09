@@ -312,3 +312,22 @@
             En caso contrario mostrára SigIn
             Al darle Sign Out la funcion signoutHandler quitara la informacion guradada en userInfo
 
+20.Crear Shipping Screen
+
+    frontend/
+        src/Store.js
+            En el cart del initialState hay una nueva llave (shippingAdress)
+        
+        screens/ShippingAddressScreen.jsx
+
+            Guradar la informacion del cliente:
+                Nombre,direccion,ciudad,codigo postal, pais
+        
+        src/App.js
+            Al cerrar sesion tambien se borrara la informacion del shippingAdress 
+        
+        components/Checkout.jsx
+            Pasos de pago 
+        
+        src/index.css
+            Agregar estilos
