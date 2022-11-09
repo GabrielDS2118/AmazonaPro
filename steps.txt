@@ -255,3 +255,39 @@
         En routes/seddRoutes.js insertar los usuarios
     
     Abrir en el navegador http://localhost:5000/api/seed para que se creen los usuarios
+
+18.SigIn API
+
+    backend/
+
+        npm install express-async-handler
+        npm install jsonwebtoken
+
+        routes/userRoutes.js 
+            - Verificar si el correo exite
+            - Verificar que la contraseña no encriptada corresponde con la encriptada
+            - Generar un token (utils.js)
+                token -> informacion del usuario, llave de seguridad(.env), expiracion
+        
+        Agregar routing de users en server.js
+
+        Verificar API
+
+            Agregar a chrome el plugin Advance Rest Client
+                 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
+            
+            En chrome://apps/ seleccionar ARC
+
+                Post http://localhost:5000/api/users/singin
+
+                Body:
+                    Body content type -> applicaction/json
+                    Editor view -> Raw input
+                    FORMAT JSON  MINIFY JSON
+                    {
+                        "email": "correousuariobd@gmail.com"
+                        "password": "contraseñausariobd"
+                    }
+
+                    SEND
+
