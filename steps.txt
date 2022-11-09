@@ -291,3 +291,24 @@
 
                     SEND
 
+19.Vista SignIn
+
+    userRoutes.js escribir correctamente el path /signin
+    Volver a probar en ARC
+
+    frontend/
+
+        npm install react-toastify --force (Mostrar mensaje cuando la contraseña o el correo son incorrectos)
+
+        src/Store.js
+            El initialState tendrá una nueva llave llamada userInfo cuyo valor estará guardado en el localStorage
+
+        src/screens/SiginScreen.js
+             Hará una request a la API para verificar que el correo y el passwrod estan en la base de datos
+             Guardará la respuesta de la solicitud en el localStorage 
+        
+        src/App.js
+            Si hay informacion en el userInfo mostrará el nombre del usuario en el navBar
+            En caso contrario mostrára SigIn
+            Al darle Sign Out la funcion signoutHandler quitara la informacion guradada en userInfo
+
