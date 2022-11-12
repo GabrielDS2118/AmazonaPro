@@ -331,3 +331,17 @@
         
         src/index.css
             Agregar estilos
+
+21.Crear Sign-Up Registro de Usuarios 
+
+    backend/routes/userRoutes.js
+        Agregar endpoint para registrar un nuevo usuario -> '/signup'
+    
+    frontend/src/screens/SignupScreen.jsx
+        Obtener la informacion del usuario y enviarla al endpoint  '/signup'
+        Guardar la informacion  del usuario en userInfo
+        Confirmar contraseña
+    
+    frontend/src/App.js
+        Poner Route para el formulario de registro
+
