@@ -345,3 +345,18 @@
     frontend/src/App.js
         Poner Route para el formulario de registro
 
+22.Payment-Method Screen
+
+    frontend/src/Store.js
+        Crear una nueva llave (paymentMethod) en el cart del initialState
+        Guardar la informacion del paymentMethod con localStorage
+    
+    screens/paymentMethodScreen.jsx
+
+        useState paymentMethodName
+        Dos check: PayPal y Stripe
+        Submit: 
+            Guardar en el ctxDispatch y en el localStorage el paymentMethodName
+
+    frontend/src/App.js
+        Route para el paymentMethodScreen
