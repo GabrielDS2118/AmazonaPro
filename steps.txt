@@ -360,3 +360,19 @@
 
     frontend/src/App.js
         Route para el paymentMethodScreen
+
+23.Place Order Screen
+
+    screens/PlaceOrderScreen.jsx
+
+        Shipping
+        Payment
+        Items
+
+        Order Summary:
+            items price
+            Shipping -> Si los items valen más de 100 no se cobrará shipping,de lo contrario se cobrara 10
+            tax -> Impuesto 0.15
+
+    frontend/src/App.js
+        Route para PlaceOlderScreen
