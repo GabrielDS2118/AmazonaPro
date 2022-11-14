@@ -376,3 +376,38 @@
 
     frontend/src/App.js
         Route para PlaceOlderScreen
+
+24.Place Order Action
+    Guardar la orden en la base de datos
+
+    Backend/
+
+        models/orderModel.js
+            Tendrá la llave foranea con la que se relaciona al usuario con la orden
+        
+        
+        utils.js
+            Autorizacion:
+                El middlewar isAuth verificará si hay un token,
+                En caso de que sí hay,verificará si el token es valido
+
+        routes/orderRoutes.js
+            '/' -> Hacer new Order y guardarla en la bases de datos, utilizar isAuth
+        
+        server.js
+            Poner orderRoutes
+    
+    frontend/
+
+        screens/PlaceOlderScreen.jsx
+            Solicitud a la API para crear la orden: 
+                En el header se le pasa el token del usuario
+                Si la solicitud es exitosa:
+                    El carrito quedara vacio
+                    Se redirige al detalle de la orden
+
+        src/Store.js
+            case 'CART_CLEAR'
+
+
+    
