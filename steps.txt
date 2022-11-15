@@ -378,6 +378,7 @@
         Route para PlaceOlderScreen
 
 24.Place Order Action
+
     Guardar la orden en la base de datos
 
     Backend/
@@ -409,5 +410,16 @@
         src/Store.js
             case 'CART_CLEAR'
 
+25.Order Screen (Despúes de guardar en la bases de datos la orden)
 
+    backend/
+        routes/orderRoutes.js
+            '/:id' -> Buscar una orden con el id
     
+    frontend/
+        screens/OrderScreen.jsx
+            Consumir a la API para buscar la orden con el id , el cual se obtiene en los params
+            Mostrar delivered, el estado de pago, items, Order Summary
+
+        src/App.js
+            Agregar Route para el OrderScreen
