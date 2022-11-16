@@ -471,3 +471,18 @@
 
     Probar funcionamiento
 
+27.Order History
+
+    frontend/
+        screens/OrderHistoryScreen.jsx
+            Mostrar la lista de ordenes del cliente
+            Consultar a la APi ('/mine')
+        src/App.js
+            Agregar Route para OrderHistoryScreen
+            Hacer menu responsive
+    
+    backend/
+        
+        routes/orderRoutes.js
+           Endpoint '/mine' que buscará las ordenes del usuario
+
