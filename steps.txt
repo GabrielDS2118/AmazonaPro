@@ -486,3 +486,22 @@
         routes/orderRoutes.js
            Endpoint '/mine' que buscará las ordenes del usuario
 
+28.Screen User Profile
+
+    El usuario podrá actualizar su informacion
+
+    frontend/
+
+        src/screens/ProfileScreen.jsx
+            Obtener la informacion actualizada del formulario
+            Enviar usuario actualizado a put('/profile')
+    
+        src/App.js
+            Agregar Route para ProfileScreen
+    
+    backend/
+
+        routes/userRoute.js
+            Endpoint put('/profile') para actualizar usuario
+            Generar un token para el usuario actualizado
+
