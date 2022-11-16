@@ -423,3 +423,51 @@
 
         src/App.js
             Agregar Route para el OrderScreen
+
+26.Implementar PayPal
+
+    Generar paypal client id:
+
+        Ir a https://developer.paypal.com/dashboard/applications/sandbox
+        Crear una sandbox app -> amazona great
+        Copiar Client id
+
+        backend/ .env
+            PAYPAL_CLIENT_ID = pegar client id
+
+    Crear endpoint para retornar client id
+        backend/server.js
+    
+    Instalar react-paypal-js
+        frontend/ -> npm install @paypal/react-paypal-js --force
+    
+    Usar PayPalScriptProvider in index.js
+        frontend/src/index.js
+    
+    Implementar PayPal en OrderScreen.js
+
+        Si ya hay una orden se configurará el client id (consultar a la API para obtenerlo) y la currency
+
+        Si la orden no esta paga mostramos el boton de paypal:
+
+            El boton de paypal tiene 3 props:
+
+                createOrder() ->
+                    Configura el amount con el order.totalPrice
+
+                onApprove() ->
+                    Se actualizará la orden con la informacion de pago de paypal 
+                    PAY_SUCCESS
+
+                OnError() ->
+                    Se ejecutará en el caso donde no se pueda realizar el pago
+
+        Mostrar en pantalla que se ha realizado el pago
+            Si successPay es igual a true, se hara una request para traer la orden
+            Se mostrará al usuario que ya se realizo el pago con un mensaje verde
+
+    backend/orderRoutes.js
+        Endpoint para actualizar la orden una vez el pago sea exitoso
+
+    Probar funcionamiento
+
