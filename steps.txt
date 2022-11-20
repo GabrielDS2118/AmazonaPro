@@ -505,3 +505,59 @@
             Endpoint put('/profile') para actualizar usuario
             Generar un token para el usuario actualizado
 
+29.Subir a Heroku
+
+    EcommerceMern/
+        Crear proyecto node en la carpeta raiz(EcommerceMern)
+
+            npm init -y
+
+            En package.json agregar comandos (build,start)
+            Estos comandos haran el comprimido del proyecto para produccion
+
+            npm run build
+
+            Error: 
+
+                Conflicto con las versiones de react del proyecto y de paypal
+
+                Solución:
+
+                    1.Ir a https://raw.githubusercontent.com/basir/mern-amazona/265da559c7de23d2c946cda3153b64cb4b6f7ab3/frontend/package.json
+                      Copiar y pegar el package.json de Basir y pegarlo en el package.json(frontend/) del proyecto
+                      Eliminar carpeta node_modules/ (frontend)
+                      frontend/ -> npm install
+                    
+                    2.En el comando build del package.json (EcommerceMern/) agregar: --legacy-peer-deps
+
+    
+    backend/server.js
+        Middleware, endpoint '*'
+            Acceder al comprmido(build)
+    
+    Heroku:
+
+        Iniciar session en Heroku
+
+        En https://dashboard.heroku.com/new-app crear una nueva app
+            name -> great-amazona
+
+        Conectar con GitHub
+            Relacionar repositorio -> AmazonaPro
+            Search
+            Connect
+            Click en Enable Automatic Deploys
+        
+        Variables 
+            settings > Reveal Config Vars
+            Copiar variables de backend/.env y pegarlas
+            Copiar el archivo backend/.env y copiarlo en la carpeta raíz (EcommerceMern/)
+        
+        Probar
+
+            EcommerceMern/
+                Localmente -> npm start y abrir http://localhost:5000/
+                heroku -> 
+                    Hacer add y commit en EcommerceMern/
+                    Ir a https://dashboard.heroku.com/apps/great-amazona/activity y copiar url de produccion
+                    
