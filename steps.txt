@@ -559,5 +559,25 @@
                 Localmente -> npm start y abrir http://localhost:5000/
                 heroku -> 
                     Hacer add y commit en EcommerceMern/
-                    Ir a https://dashboard.heroku.com/apps/great-amazona/activity y copiar url de produccion
-                    
+                    Ir a https://dashboard.heroku.com/apps/great-amazona/activity y copiar url de produccion(https://great-amazona.herokuapp.com/)
+
+30.Sidebar y Search Box
+
+    backend/
+        routes/productRoutes.js 
+            Hacer endpoint '/categories' para buscar las diferentes categorias
+    
+    frontend/
+
+        src/App.js
+
+            Consultar a la API('/categories')
+            Cuando sidebarIsOpen sea True se mostrará el sidebar
+            Button hará el toggle
+        
+        src/components/SearchBox.jsx
+            Al cambiar el input se actualizará la variable query con la cual se hará un navigate
+
+        src/index.css 
+            Agregar estilos
+
