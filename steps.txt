@@ -581,3 +581,27 @@
         src/index.css 
             Agregar estilos
 
+31.Pantalla de Busqueda
+
+    frontend/
+
+        src/screens/SearchScreen.jsx
+
+            Ejemplo:
+
+                Buscar -> Shirts
+                    http://localhost:3000/search?category=Shirts
+                
+                Consumir a la API ('/search')
+
+                Price -> 51 to 200
+                    http://localhost:3000/search?category=Shirts&query=all&price=51-200&rating=all&order=newest&page=1
+ 
+    backend/
+        routes/productRoutes.js
+            '/search' -> filtrar (
+                Por ejemplo: 
+                    category -> search
+                    price -> 51 - 200
+            )
+
