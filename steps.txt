@@ -620,3 +620,28 @@
 
         src/screens/DashboardScreen.js
             DashboardScreen
+
+33.Dashboard Screen
+
+    backend/
+        routes/OrderRoutes.js
+        Endpoint '/summary'
+            Mediante la funcion aggregate contar:
+                Ordenes
+                Usuarios
+                cantidad de prouctos por cada categoria
+                Ordenes por fecha (dailyOrders) -> Hacer la fecha el _id
+
+            Este endpoint tendrá isAuth e IsAdmin (backend/utils.js)
+    
+    frontend/
+
+        src/screens/DashboardScreen.js
+
+            Consultar a la API('/summary') y presentar la informacion
+
+            Diagrama de ventas:
+                Eje x ('date') -> order._id
+                Eje y ('sales') -> order.sales
+
+
