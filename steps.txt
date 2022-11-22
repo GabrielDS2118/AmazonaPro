@@ -605,3 +605,18 @@
                     price -> 51 - 200
             )
 
+32.Admin menu
+    frontend/
+        src/componentes/AdminRoute.js
+            Si el user es Admin mostrará el componente children
+            De lo contrario lo enviará al formulario para iniciar session
+        
+        src/componentes/ProductRoute.js
+            Si el usaurio ha iniciado session mostrará el componente children
+            De lo contrario lo enviará al login
+        
+        src/App.js
+            Protejer rutas
+
+        src/screens/DashboardScreen.js
+            DashboardScreen
