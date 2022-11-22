@@ -644,4 +644,49 @@
                 Eje x ('date') -> order._id
                 Eje y ('sales') -> order.sales
 
+CRUD Productos
 
+    34.Lista de Productos
+
+        backend/
+
+            routes/productRoutes.js
+
+                Endpoint -> '/admin'
+
+                    Páginacion:
+
+                        .skip(pageSize * (page - 1)) -> offset
+                        .limit(pageSize); -> limit
+
+                        Ejemplos:
+
+                            Página 1
+                                pageSize = 3
+                                page = 1
+
+                                .skip(0) -> No se salta ningun producto,empezará desde el primero
+                                .limit(3) -> Contando el primer producto mostrará 3
+                                
+                                Productos 1 - 3
+
+                            Página 2
+
+                                pageSize = 3
+                                page = 2
+
+                                .skip(3) -> Se saltará tres productos
+                                .limit() -> Hay solo 4 productos por eso si salta tres solo mostrará uno
+
+                                Producto 4
+                    isAuth e isAdmin
+
+        frontend/
+
+            src/screens/ProductListScreen.jsx
+                Consultar a la API('/admin') y presentar la lista de productos por página
+
+            src/App.js
+                Agregar Route para ProductListScreen
+        
+    
