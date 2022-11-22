@@ -689,4 +689,17 @@ CRUD Productos
             src/App.js
                 Agregar Route para ProductListScreen
         
-    
+    35.Crear Producto (Pruebas)
+
+        backend/
+            routes/productRoutes.js
+                Endpoint post('/')
+                    Crear un producto de prueba
+        
+        frontend/
+             src/screens/ProductListScreen.jsx
+                Boton para agregar un producto, 
+                Al darle click -> 
+                    Confirmar creacion, llamar a la API post('/') de productos
+
+        
